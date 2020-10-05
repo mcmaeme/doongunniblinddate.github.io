@@ -8,7 +8,7 @@ if(empty($_POST['이름'])  		||
    empty($_POST['이상형'])	||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-	echo "No arguments Provided!";
+	echo "빈칸을 채워주세요!";
 	return false;
    }
 	
