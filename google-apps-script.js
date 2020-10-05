@@ -53,7 +53,7 @@ function doPost(e) {
     // determine recepient of the email
     // if you have your email uncommented above, it uses that `TO_ADDRESS`
     // otherwise, it defaults to the email provided by the form's data attribute
-    var sendEmailTo = (typeof TO_ADDRESS !== "mcmaeme2018@gmail.com") ? TO_ADDRESS : mailData.formGoogleSendEmail;
+    var sendEmailTo = (typeof TO_ADDRESS !== "undefined") ? TO_ADDRESS : mailData.formGoogleSendEmail;
     
     // send email if to address is set
     if (sendEmailTo) {
