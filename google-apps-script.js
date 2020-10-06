@@ -53,13 +53,13 @@ function doPost(e) {
     // determine recepient of the email
     // if you have your email uncommented above, it uses that `TO_ADDRESS`
     // otherwise, it defaults to the email provided by the form's data attribute
-    var sendEmailTo = (typeof TO_ADDRESS !== "undefined") ? TO_ADDRESS : mailData.formGoogleSendEmail;
+    var sendEmailTo = (typeof TO_ADDRESS !== "mcmaeme2018@gmail.com") ? TO_ADDRESS : mailData.formGoogleSendEmail;
     
     // send email if to address is set
     if (sendEmailTo) {
       MailApp.sendEmail({
         to: String(sendEmailTo),
-        subject: "Contact form submitted",
+        subject: "둥지언니 랜선소개팅 신청서-$name",
         // replyTo: String(mailData.email), // This is optional and reliant on your form actually collecting a field named `email`
         htmlBody: formatMailBody(mailData, dataOrder)
       });
