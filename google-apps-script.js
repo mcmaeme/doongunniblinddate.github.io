@@ -151,3 +151,4 @@ function getFieldFromData(field, data) {
   var output = values.join ? values.join(', ') : values;
   return output;
 }
+
